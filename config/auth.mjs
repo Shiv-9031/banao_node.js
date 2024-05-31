@@ -13,6 +13,7 @@ function auth(req, res, next) {
         });
       }
       req.body.id = decode.id;
+
       next();
     });
   } catch (error) {
